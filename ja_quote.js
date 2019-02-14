@@ -14,7 +14,16 @@
    quotation tag in the Web page.
 
 */
+/*  */
+var size = 10;
+var randomQ = randomInt(0, size);
+// alert("randomQ: " + randomQ);
+document.getElementById("quote").innerHTML = getQuote(randomQ);
 
+function randomInt(lowest, size) {
+
+    return Math.floor(Math.random() * size);
+}
 
 function getQuote(n) {
     var quotes = [
@@ -31,8 +40,4 @@ function getQuote(n) {
     ];
 
     return quotes[n];
-}
-
-function randomInt {
-
 }
